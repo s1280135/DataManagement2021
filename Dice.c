@@ -4,6 +4,7 @@
 
 int main(){
   int i,j,n,sum=0;
+  char name[50];
   
   srand((unsigned)time(NULL));
 	
@@ -15,6 +16,10 @@ int main(){
     
     sum=i+j;
   }
+
+  printf("What is your name?\n");
+  scanf("%s",name);
+  printf("Hello, %s!\n",name);
   
   printf("Rolling the dice...\n");
   printf("Dice 1：%d\n",i);
